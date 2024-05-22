@@ -5,13 +5,74 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/loginbkg1"
     android:gravity="center"
+    android:orientation="vertical"
     tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"
+        android:background="@color/white"
+        app:cardCornerRadius="40dp"
+        app:cardElevation="10dp">
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="320dp"
+            android:layout_gravity="center"
+            android:elevation="30dp"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center"
+                android:layout_marginBottom="30dp"
+                android:text="Login"
+                android:textColor="#6D77FA"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/background_edittext"
+                android:drawableStart="@drawable/baseline_person_24"
+                android:drawablePadding="5dp"
+                android:hint="Username"
+                android:paddingHorizontal="10dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/background_edittext"
+                android:drawableStart="@drawable/baseline_lock_24"
+                android:drawablePadding="5dp"
+                android:hint="Password"
+                android:paddingHorizontal="10dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/background_button"
+                android:text="Login"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/background_shape"
-        android:text="Hello World!" />
+        android:text="Not yet registered? SignUp Now"
+        android:textAlignment="center"
+        android:textColor="#8490F5"
+        android:textSize="15sp" />
 
 </LinearLayout>
